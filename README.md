@@ -148,6 +148,3 @@ Feedstock Maintainers
 * [@neda-dtu](https://github.com/neda-dtu/)
 * [@simutisernestas](https://github.com/simutisernestas/)
 
-
-<!-- dummy commit to enable rerendering -->
-
