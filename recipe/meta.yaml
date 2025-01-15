@@ -25,9 +25,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base
-    - numpy <2.0
+    - numpy
     - numpy-financial
-    - openmdao <=3.26
+    - openmdao
     - pydoe2
     - pydoe3 >=1.0.4,<2
     - scipy
