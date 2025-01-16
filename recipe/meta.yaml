@@ -1,5 +1,5 @@
 {% set name = "topfarm" %}
-{% set version = "2.4.3" %}
+{% set version = "2.5.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ba744464ee3156c34f69667945cd88a316f22b4c78476552137ac56137b4693d
+  sha256: 909b5723e5f3e6fc79be34165a5e7f9ded37590aa3e94c0ce51f012f92808dff
 
 build:
   noarch: python
@@ -25,9 +25,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base
-    - numpy <2.0
+    - numpy
     - numpy-financial
-    - openmdao <=3.26
+    - openmdao
     - pydoe2
     - pydoe3 >=1.0.4,<2
     - scipy
