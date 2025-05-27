@@ -27,7 +27,7 @@ requirements:
     - matplotlib-base
     - numpy
     - numpy-financial
-    - openmdao
+    - openmdao <3.39
     - pydoe2
     - pydoe3 >=1.0.4,<2
     - scipy
