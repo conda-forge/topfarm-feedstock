@@ -39,8 +39,8 @@ requirements:
 test:
   imports:
     - topfarm
-  commands:
-    - pip check
+#  commands:
+#    - pip check # fails due to git-lfs not available on conda
   requires:
     - pip
     - python {{ python_min }}
