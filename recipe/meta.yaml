@@ -1,5 +1,5 @@
 {% set name = "topfarm" %}
-{% set version = "2.5.3" %}
+{% set version = "2.6.1" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7f1ab9310282ff7a19e8fb035cece7057bfeefe409c3b999f7cb6c3937ee0fd4
+  sha256: 0e70611bc4df9883469c82bcf7ce89bd9bf6d1edf1141c2c697b32fca78c6e79
 
 build:
   noarch: python
