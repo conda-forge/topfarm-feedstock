@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -26,15 +26,16 @@ requirements:
     - python >={{ python_min }}
     - matplotlib-base
     - numpy
-    - numpy-financial
-    - openmdao <3.40
-    - pydoe2
+    - numpy-financial >=1.0.0,<2
+    - openmdao >=3.39,<3.40
+    - pydoe2 >=1.3.0,<2
     - pydoe3 >=1.0.4,<2
-    - scipy
-    - scikit-learn
+    - scipy >=1.10.1,<2
+    - scikit-learn >=1.3.2,<2
     - shapely >=2.0.6,<3
-    - jupyterlab
     - py-wake >=2.6.5
+    - optiwindnet
+    - jupyterlab
 
 test:
   imports:
