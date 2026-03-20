@@ -34,8 +34,7 @@ requirements:
     - scikit-learn >=1.3.2,<2
     - shapely >=2.0.6,<3
     - py-wake >=2.6.5
-    - optiwindnet <=0.1.0  # [py == 310]
-    - optiwindnet          # [py >= 311]
+    - optiwindnet
     - jupyterlab
 
 test:
