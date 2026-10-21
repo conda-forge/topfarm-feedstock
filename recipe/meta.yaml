@@ -1,14 +1,13 @@
 {% set name = "topfarm" %}
-{% set version = "2.6.2" %}
-{% set python_min = "3.11" %}
+{% set version = "2.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 821244b5eae5183ef5085fd6e85f10df695586aaf22f7502731fc0b9e84c93cb
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: d8aca090ab996cca063cd2947c79478f7962ff751228d3b3ac0f60f502ea1765
 
 build:
   noarch: python
@@ -34,7 +33,7 @@ requirements:
     - scikit-learn >=1.3.2,<2
     - shapely >=2.0.6,<3
     - py-wake >=2.6.5
-    - optiwindnet
+    - optiwindnet <0.4
     - jupyterlab
 
 test:
